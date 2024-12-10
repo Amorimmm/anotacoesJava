@@ -1,7 +1,25 @@
-public class person {
+import java.util.Objects;
 
-    String name;
-    String job;
+public class person extends cadastro {
+
+    private String name;
+    private String job;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getJob() {
+        return job;
+    }
+
+    public void setJob(String job) {
+        this.job = job;
+    }
 
     public void cadastroRealizado() {
         System.out.println("Login realizado com sucesso.");
@@ -13,16 +31,22 @@ public class person {
         System.out.println("Nome: " + job);
     }
 
-    public void trabalhando(String cargo) {
 
-        if(cargo == "developer") {
-            System.out.println("Voce nao pode se cadastrar em um cargo pois nao e um funcionario");
-        } else if (cargo == "metalurgico") {
-            System.out.println("Voce nao pode se cadastrar em um cargo pois nao e um funcionario");
-        } else {
-            System.out.println("Voce nao pode se cadastrar em um cargo pois nao e um funcionario");
+/*   public void trabalhando(String cargo) {
+
+        for(int i=0;i < 1; System.exit(0)) {
+            if (Objects.equals(cargo, "programador")) {
+                System.out.println("Voce nao pode se cadastrar em um cargo pois nao e um funcionario");
+                System.exit(0);
+            } else if (Objects.equals(cargo, "metalurgico")) {
+                System.out.println("Voce nao pode se cadastrar em um cargo pois nao e um funcionario");
+                System.exit(0);
+            } else {
+                System.out.println("Voce nao pode se cadastrar em um cargo pois nao e um funcionario");
+                System.exit(0);
+            }
         }
-    }
+    }*/
 }
 
 

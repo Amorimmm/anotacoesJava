@@ -1,20 +1,16 @@
+import java.util.Scanner;
+
 public class main {
     public static void main(String[] args) {
 
-        metallurgico person1 = new metallurgico();
+        Scanner sc = new Scanner(System.in);
+        person person1 = new person();
 
-        person1.name = "Andre Luciano";
-        person1.job = "metalurgico";
-        person1.cadastroRealizado();
-        person1.trabalhando(person1.job);
-        System.out.println();
+        String nome;
+        String funcao;
 
-        dev person2 = new dev();
 
-        person2.name = "Leonardo Amorim";
-        person2.job = "programador";
-        person2.cadastroRealizado();
-        person2.trabalhando(person2.job);
+
 
     }
 }
